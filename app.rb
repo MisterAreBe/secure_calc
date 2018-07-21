@@ -1,5 +1,10 @@
 require 'sinatra'
 
+
 get '/' do
-  'Hello world'
+  erb :index, :layout => :layout
+end
+
+post '/calc' do
+  erb :calc, :layout => :layout
 end
