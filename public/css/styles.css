@@ -43,3 +43,21 @@ table{
     font-weight: 500;
     font-size: 30px;
 }
+.logout{
+    height: 10%;
+    width: 99%;
+    text-align: right;
+    padding: 5px;
+}
+.signed{
+    font-family: Roboto, serif;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.head{
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 0.5px black;
+}
