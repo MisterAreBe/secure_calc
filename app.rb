@@ -27,7 +27,7 @@ if valid_name.include?(user_name)
       if first_name == 'java' && last_name == 'script'
         redirect '/js_calc'
       else
-      redirect '/calc'
+        redirect '/calc'
       end
     else
       erb :index, :layout => :layout, locals: {err_msg: 'Username and Password do not match'}
@@ -37,6 +37,8 @@ if valid_name.include?(user_name)
   end
 elsif valid_pwd.include?(password)
   erb :index, :layout => :layout, locals: {err_msg: 'Invalid Username'}
+else
+  erb :index, :layout => :layout, locals: {err_msg: 'Invalid Username and Password'}
 end
 end
 
