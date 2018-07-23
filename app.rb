@@ -28,6 +28,7 @@ if valid_name.include?(user_name)
         redirect '/js_calc'
       else
       redirect '/calc'
+      end
     else
       erb :index, :layout => :layout, locals: {err_msg: 'Username and Password do not match'}
     end
