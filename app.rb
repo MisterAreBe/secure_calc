@@ -14,7 +14,9 @@ last_name = params[:last_name]
 user_name = params[:user_name]
 password = params[:password]
 
-
+session[:f_name] = first_name
+session[:l_name] = last_name
+session[:u_name] = user_name
 
 valid_name = ENV['username'].split(' ')
 valid_pwd = ENV['password'].split(' ')
@@ -36,9 +38,9 @@ end
 
 get '/calc' do
   math = session[:screen] || ''
-  first_name = session[:first_name]
-  last_name = session[:last_name]
-  user_name = session[:user_name]
+  first_name = session[:f_name]
+  last_name = session[:l_name]
+  user_name = session[:u_name]
   erb :calc, :layout => :layout, locals: {math: math, first_name: first_name, last_name: last_name, user_name: user_name}
 end
 
