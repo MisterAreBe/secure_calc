@@ -1,19 +1,21 @@
 <div class="logout">
     <form method="get" action="/">
         <font class="signed">Signed in as: <%=user_name%></font>
-        <input type="submit" value="Sign Out">
+        <input class="btn" type="submit" value="Sign Out">
     </form>
 </div>
 <div class="calc">
-    <div class="head">Hello, <%=first_name%> <%=last_name%>,<br> Here is a Calculator.</div>
+    <div class="head">Hello, <%=first_name%> <%=last_name%>, Here is a Calculator.</div>
     <form name="calc" method="post" action='/math'>
         <input type="text" name="screen" id="screen" value="<%=math%>" disabled><br>
-        <input class="num" type="number" name="x" placeholder="First number" step="any">
-        <input class="num" type="number" name="y" placeholder="Second number" step="any"><br><br>
+        <input class="box" type="number" name="x" placeholder="First number" step="any">
+        <input class="box" type="number" name="y" placeholder="Second number" step="any"><br>
+        <div class="rad_btn">
         <input class="radio" type="radio" name="z" value="add">Add<br>
         <input class="radio" type="radio" name="z" value="subtract">Subtract<br>
         <input class="radio" type="radio" name="z" value="multiply">Multiply<br>
-        <input class="radio" type="radio" name="z" value="divide">Divide<br><br>
-        <input type="submit" value="Calculate">
+        <input class="radio" type="radio" name="z" value="divide">Divide<br>
+        </div>
+        <input class="btn" type="submit" value="Calculate">
     </form>
 </div>

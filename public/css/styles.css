@@ -13,7 +13,7 @@ html{
     font-size: 3rem;
     border: 1px solid lightgoldenrodyellow;
     box-shadow: 1px 1px 1px black;
-    background-color: #ffe680d5;
+    background-color: #ffe6809c;
     height: 2em;
     width: 90%;
     margin: 0.3em;
@@ -35,8 +35,8 @@ html{
     border-radius: 30%;
     box-shadow: 1px 1px 1px black;
     font-size: 2.5rem;
-    width: 50%;
-    height: 70%;
+    width: 35em;
+    height: 50em%;
     padding: 1em;
     margin: 1em;
 }
@@ -52,7 +52,7 @@ table{
     text-align: center;
     font-family: Roboto, serif;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 .clear_button{
     width: 70%;
@@ -61,19 +61,21 @@ table{
     text-align: center;
     font-family: Roboto, serif;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 3rem;
 }
 .logout{
     height: 10%;
     width: 99%;
     text-align: right;
     padding: 5px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
 }
 .signed{
     font-family: Roboto, serif;
     font-weight: 500;
     font-size: 2rem;
-    margin-right: 0.5em;
+    margin: 0.5em;
 }
 .head{
     font-family: Roboto, sans-serif;
@@ -81,14 +83,49 @@ table{
     font-size: 4rem;
     text-align: center;
     text-shadow: 1px 1px 0.5px black;
+    color: #ffffff;
+    margin: 0.1em;
 }
-.num{
-    background-color: transparent;
+.box{
+    background-color: #ffe6809c;
     border-bottom: 1px solid #596470;
     border-right: 1px solid lightslategray;
+    font-family: Roboto, sans-serif;
     font-size: 2rem;
-    width: 10em;
+    width: 20em;
+    padding: 1em;
+    color: #ffffff;
+    border-radius: 1em;
+    outline: none;
+    margin: 0.2em;
 }
-.radio{
-    
+.err_msg{
+    font-family: Roboto, serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    margin: 0.1em;
+}
+.btn{
+    font-size: 1.8rem;
+    font-family: Roboto, serif;
+    font-weight: 500;
+    width: 10em;
+    padding: 0.5em;
+    text-align: center;
+    background-color: #daa520b0;
+    color: #ffffff;
+    border: 1px 1px 1px #596470;
+    box-shadow: 5px 5px 20px darkslategrey;
+    outline: none;
+    border-radius: 1em;
+    margin: 0.5em;
+}
+.rad_btn{
+    color: #ffffff;
+    font-family: Roboto, serif;
+    font-size: 3rem;
+    text-align: left;
+    width: 5em;
 }
