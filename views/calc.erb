@@ -4,16 +4,16 @@
         <input type="submit" value="Sign Out">
     </form>
 </div>
-<div>
+<div class="calc">
     <div class="head">Hello, <%=first_name%> <%=last_name%>,<br> Here is a Calculator.</div>
     <form name="calc" method="post" action='/math'>
         <input type="text" name="screen" id="screen" value="<%=math%>" disabled><br>
-        <input type="number" name="x" placeholder="First number" step="any">
-        <input type="number" name="y" placeholder="Second number" step="any"><br><br>
-        <input type="radio" name="z" value="add">Add<br>
-        <input type="radio" name="z" value="subtract">Subtract<br>
-        <input type="radio" name="z" value="multiply">Multiply<br>
-        <input type="radio" name="z" value="divide">Divide<br><br>
+        <input class="num" type="number" name="x" placeholder="First number" step="any">
+        <input class="num" type="number" name="y" placeholder="Second number" step="any"><br><br>
+        <input class="radio" type="radio" name="z" value="add">Add<br>
+        <input class="radio" type="radio" name="z" value="subtract">Subtract<br>
+        <input class="radio" type="radio" name="z" value="multiply">Multiply<br>
+        <input class="radio" type="radio" name="z" value="divide">Divide<br><br>
         <input type="submit" value="Calculate">
     </form>
 </div>

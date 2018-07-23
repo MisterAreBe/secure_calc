@@ -5,9 +5,16 @@
             <link href="https://fonts.googleapis.com/css?family=Roboto:300, 500" rel="stylesheet">
             <link rel="stylesheet" type="text/css" href="/css/styles.css">
     </head>
-    <body>
+    <body id="body" onload="loadImage()">
         <center>
             <%= yield %>
         </center>
     </body>
 </html>
+
+<script>
+    function loadImage() {
+        var num = Math.floor(Math.random() * (5 - 1 + 1) ) + 1;
+        document.getElementById("body").style.backgroundImage = "url('/images/img" + num.toString() + ".jpg')";
+    }
+</script>
