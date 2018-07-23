@@ -1,11 +1,11 @@
 <div class="logout">
     <form method="get" action="/">
-        <font class="signed">Signed in as: user_name</font>
+        <font class="signed">Signed in as: <%=user_name%></font>
         <input type="submit" value="Sign Out">
     </form>
 </div>
 <div>
-    <div class="head">Hello, first_name last_name,<br> Here is a Calculator.</div>
+    <div class="head">Hello, <%=first_name%> <%=last_name%>,<br> Here is a Calculator.</div>
     <form name="calc" method="post" action='/math'>
         <input type="text" name="screen" id="screen" value="<%=math%>" disabled><br>
         <input type="number" name="x" placeholder="First number" step="any">

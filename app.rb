@@ -36,8 +36,10 @@ end
 
 get '/calc' do
   math = session[:screen] || ''
-
-  erb :calc, :layout => :layout, locals: {math: math}
+  first_name = session[:first_name]
+  last_name = session[:last_name]
+  user_name = session[:user_name]
+  erb :calc, :layout => :layout, locals: {math: math, first_name: first_name, last_name: last_name, user_name: user_name}
 end
 
 post '/math' do
