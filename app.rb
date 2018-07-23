@@ -16,7 +16,7 @@ password = params[:password]
 
 
 
-valid_name = ENV['user_name'].split(' ')
+valid_name = ENV['username'].split(' ')
 valid_pwd = ENV['password'].split(' ')
 
 if valid_name.include?(user_name)
