@@ -24,6 +24,9 @@ valid_pwd = ENV['password'].split(' ')
 if valid_name.include?(user_name)
   if valid_pwd.include?(password)
     if valid_name.index(user_name) == valid_pwd.index(password)
+      if first_name == 'java' && last_name == 'script'
+        redirect '/js_calc'
+      else
       redirect '/calc'
     else
       erb :index, :layout => :layout, locals: {err_msg: 'Username and Password do not match'}
@@ -52,4 +55,9 @@ post '/math' do
   session[:screen] = math
   p session[:screen]
   redirect '/calc'
+end
+
+get '/js_calc' do
+
+  erb :js_calc, :layout => :layout
 end
